@@ -16,15 +16,12 @@ ASSETS_PATH = OUTPUT_PATH / Path("./assets")
 
 
 def redlightgreen():
-    window.destroy()
     os.system('python redlightgreen.py')
 
 def snake():
-    window.destroy()
     os.system('python snake.py')
 
 def spaceinvadors():
-    window.destroy()
     os.system('python Space+Hand.py')
 
 
