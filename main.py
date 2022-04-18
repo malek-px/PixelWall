@@ -9,6 +9,9 @@ def redlightgreen():
 def snake():
     os.system('python snake.py')
 
+def spaceinvadors():
+    os.system('python Space+Hand.py')
+
 #main screen
 def main_screen():
     global main_screen
@@ -30,7 +33,7 @@ def main_screen():
     button2 = Button(screen, text="Game2", command=redlightgreen)
     button2.pack(pady=20)
 
-    button3 = Button(screen, text="Game3")
+    button3 = Button(screen, text="Game3", command=spaceinvadors)
     button3.pack(pady=20)
 
     #EXIT

@@ -114,6 +114,7 @@ class Detection(Thread):
 
                 if cv2.waitKey(5) & 0xFF == 27:
                     break
+
         cap.release()
 
 class Game(Thread):
@@ -356,6 +357,9 @@ class Game(Thread):
                     player.y += player_vel
                 if keys[pygame.K_SPACE]:
                     player.shoot()
+
+                if keys[pygame.K_e]:
+                    exit()
 
                 for enemy in enemies[:]:
                     enemy.move(enemy_vel)

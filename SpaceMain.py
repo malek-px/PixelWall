@@ -245,6 +245,10 @@ def main():
 
         player.move_lasers(-laser_vel, enemies)
 
+        #exit button
+        if keys == ord('f'):
+            exit()
+
 def main_menu():
     title_font = pygame.font.SysFont("comicsans", 70)
     run = True
